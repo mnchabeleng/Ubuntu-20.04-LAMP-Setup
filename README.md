@@ -53,14 +53,18 @@ Move the PHP index.php to the first position, like this:
 </IfModule>
 ```
 
-### 7. PHP.ini file location
-
-```
-$ sudo vi /etc/php/7.4/cli/php.ini
-```
-
-### 8. Restart apache server
+### 7. Restart apache server
 
 ```
 $ sudo systemctl restart apache2
+```
+
+## Additionally
+
+### 1. PHP.ini file location
+
+Will vary depanding on the version of PHP
+
+```
+$ sudo vi /etc/php/7.4/cli/php.ini
 ```
