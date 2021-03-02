@@ -17,9 +17,9 @@ echo "\033[33mInstall PHP and some extansions"
 sudo apt install php libapache2-mod-php php-mysql php-cli php-common php-zip php-simplexml php-gd php-curl php-intl -y
 
 echo "\033[33mInstall PHP and some extansions"
-sudo echo    "<IfModule mod_dir.c>" > hello.txt
-sudo echo -e "\tDirectoryIndex index.php index.html index.cgi index.pl index.xhtml index.htm" >> hello.txt
-sudo echo    "</IfModule>" >> hello.txt
+sudo echo    "<IfModule mod_dir.c>" > /etc/apache2/mods-enabled/dir.conf
+sudo echo -e "\tDirectoryIndex index.php index.html index.cgi index.pl index.xhtml index.htm" >> /etc/apache2/mods-enabled/dir.conf
+sudo echo    "</IfModule>" >> /etc/apache2/mods-enabled/dir.conf
 
 echo "\033[33mRestart apache server"
 sudo systemctl restart apache2
