@@ -68,3 +68,15 @@ Will vary depanding on the version of PHP
 ```
 $ sudo vi /etc/php/7.4/cli/php.ini
 ```
+
+###  2. File permissions
+
+```
+$ sudo chmod -R 0777 /var/www/html/
+```
+
+### 3. File ownership
+
+```
+$ sudo chmod -R www-data:www-data /vat/www/html/
+```
