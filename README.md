@@ -59,7 +59,7 @@ Move the PHP index.php to the first position, like this:
 $ sudo vi /etc/php/7.4/cli/php.ini
 ```
 
-8. ### Restart apache server
+### 8. Restart apache server
 
 ```
 $ sudo systemctl restart apache2
